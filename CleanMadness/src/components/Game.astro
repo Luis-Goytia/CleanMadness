@@ -1,12 +1,12 @@
 ---
-import logo from '../assets/LogotipoCOLOR-V2 2.png'
-import google from '../assets/google-play-badge.png'
-import bg from '../assets/BG.jpg'
+import logo from "../assets/LogotipoCOLOR-V2 2.png";
+import google from "../assets/google-play-badge.png";
+import bg from "../assets/BG.jpg";
 ---
 
 <div class="container">
-    <div class="game" id="game">
-      <!-- <div id="asteroid-field">
+  <div class="game" id="game">
+    <!-- <div id="asteroid-field">
         <img
           src="./assets/Parallax Version BG/ITEM BASURA 03.png"
           class="asteroid"
@@ -20,39 +20,39 @@ import bg from '../assets/BG.jpg'
           class="asteroid"
         />
       </div> -->
-      <div class="portada">
-        <div class="logoColor">
-          <img src={logo} alt="LogoColor" />
-        </div>
-        <div class="text">
-          <p>La importancia de la limpieza del medioambiente</p>
-          <div class="line"></div>
-        </div>
-        <div class="download">
-          <img src={google} alt="download" />
-        </div>
+    <div class="portada">
+      <div class="logoColor">
+        <img src={logo} alt="LogoColor" />
       </div>
-    </div></div>
+      <div class="text">
+        <p>La importancia de la limpieza del medioambiente</p>
+        <div class="line"></div>
+      </div>
+      <div class="download">
+        <img src={google} alt="download" />
+      </div>
+    </div>
+  </div>
+</div>
 
-    <style>
-        
-.container {
-  display: flex;
-  flex-direction: column;
-}
-/* --------------Portada-------------- */
-.game {
-  background-image: url(../assets/BG.jpg);
-  background-size: cover;
-  background-position: center;
-  height: 1080px;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-}
+<style>
+  .container {
+    display: flex;
+    flex-direction: column;
+  }
+  /* --------------Portada-------------- */
+  .game {
+    background-image: url(../assets/BG.jpg);
+    background-size: cover;
+    background-position: center;
+    height: 1080px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
 
-/* .asteroides{
+  /* .asteroides{
   position: relative;
     width: 500px;
     height: 500px;
@@ -75,56 +75,53 @@ import bg from '../assets/BG.jpg'
 }
  */
 
-.portada {
-  display: grid;
-  grid-template-columns: 1fr;
-  grid-template-rows: repeat(3, 1fr);
-  grid-column-gap: 0px;
-  grid-row-gap: 0px;
-  margin-top: 200px;
-}
+  .portada {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(3, 1fr);
+    grid-column-gap: 0px;
+    grid-row-gap: 0px;
+    margin-top: 200px;
+  }
 
-.logoColor {
-  grid-area: 1 / 1 / 2 / 2;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-.logoColor img {
-  margin-top: -100px;
-  display: flex;
-  height: auto;
-}
-.text , .text2 {
-  grid-area: 2 / 1 / 3 / 2;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-}
+  .logoColor {
+    grid-area: 1 / 1 / 2 / 2;
+  }
+  .logoColor img {
+    margin-top: -100px;
+    display: flex;
+    height: auto;
+  }
+  .text,
+  .text2 {
+    grid-area: 2 / 1 / 3 / 2;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
 
-.text p {
-  font-family: "Nunito", sans-serif;
-  font-size: 22px;
-  color: white;
-}
+  .text p {
+    font-family: "Nunito", sans-serif;
+    font-size: 22px;
+    color: white;
+  }
 
-.line {
-  position: absolute;
-  width: 100px;
-  height: 0px;
-  border: 2px solid #ffffff;
-  margin-top: 50px;
-}
-.download {
-  grid-area: 3 / 1 / 4 / 2;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-.download img {
-  width: 153px; ;
-  margin-top: -230px;
-}
-
-    </style>
+  .line {
+    position: absolute;
+    width: 100px;
+    height: 0px;
+    border: 2px solid #ffffff;
+    margin-top: 50px;
+  }
+  .download {
+    grid-area: 3 / 1 / 4 / 2;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .download img {
+    width: 153px;
+    margin-top: -230px;
+  }
+</style>
