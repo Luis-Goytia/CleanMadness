@@ -1,37 +1,44 @@
 ---
 import textgroup from "../assets/txtgroup.png";
+import villan1 from "../assets/SPRITE VILLAIN.png";
 ---
 
-<div class="why" id="why">
+<div class="why">
   <div class="text">
     <div><p>El Por que</p></div>
-    <div class="line"></div>
   </div>
-
+  <div class="line"></div>
   <div class="description">
     <img src={textgroup} alt="textgroup" />
+    <img src={villan1} alt="villan1" class="villan1" />
     <div class="descrip">
-        <div class="descrip1"><p>
-        La idea base surgió del sentimiento de <strong>concientización sobre el
-        medioambiente</strong> y la importancia del rol de los recolectores de basura,
-        así como de la intención de las personas de contribuir con esta tarea.
-        Se buscó crear un juego <strong>entretenido, con acción, dinamismo</strong> y que al
-        mismo tiempo mostrara el importante factor de la basura en nuestro
-        planeta y cómo, si no se erradica, podrá causar muchos <strong>problemas a largo 
-        plazo.</strong>
-        
-      </p></div>
-      
-      <div class="descrip2"><p>
-        En el juego, controlarás a un <strong>recolector de basura</strong> en un mundo sumido
-        por la contaminación. Fruto de esto y de las malas intenciones de la
-        humanidad, nació una entidad maligna llamada <strong>Mente</strong>, capaz de dar vida
-        corrupta a la basura. Esta entidad atacará al jugador con la intención
-        de detenerlo. Tu misión será <strong>limpiar el mundo de esta corrupción</strong>,
-        destruyendo los enemigos controlados por el villano y recolectando la
-        mayor cantidad de basura posible.
-      </p></div>
-      
+      <div class="descrip1">
+        <p>
+          La idea base surgió del sentimiento de <strong
+            >concientización sobre el medioambiente</strong
+          > y la importancia del rol de los recolectores de basura, así como de la
+          intención de las personas de contribuir con esta tarea. Se buscó crear
+          un juego <strong>entretenido, con acción, dinamismo</strong> y que al mismo
+          tiempo mostrara el importante factor de la basura en nuestro planeta y
+          cómo, si no se erradica, podrá causar muchos <strong
+            >problemas a largo plazo.</strong
+          >
+        </p>
+      </div>
+
+      <div class="descrip2">
+        <p>
+          En el juego, controlarás a un <strong>recolector de basura</strong> en
+          un mundo sumido por la contaminación. Fruto de esto y de las malas intenciones
+          de la humanidad, nació una entidad maligna llamada <strong
+            >Mente</strong
+          >, capaz de dar vida corrupta a la basura. Esta entidad atacará al
+          jugador con la intención de detenerlo. Tu misión será <strong
+            >limpiar el mundo de esta corrupción</strong
+          >, destruyendo los enemigos controlados por el villano y recolectando
+          la mayor cantidad de basura posible.
+        </p>
+      </div>
     </div>
   </div>
 </div>
@@ -39,8 +46,11 @@ import textgroup from "../assets/txtgroup.png";
 <style>
   /* ---------why--------- */
   .why {
+    position: relative;
     display: flex;
-    flex-direction: column; 
+    flex-direction: column;
+    align-items: center;
+    margin-top: 100px;
   }
   /* ---------title--------- */
   .text {
@@ -52,7 +62,7 @@ import textgroup from "../assets/txtgroup.png";
 
   .text p {
     font-family: "Nunito", sans-serif;
-    font-size: 22px;
+    font-size: 24px;
     color: white;
   }
   .line {
@@ -63,15 +73,23 @@ import textgroup from "../assets/txtgroup.png";
     position: relative;
     display: inline-block;
     text-align: center;
+    margin-top: -10px;
   }
   /* ---------description--------- */
   .description {
     position: relative;
     display: inline-block;
     text-align: center;
+    margin-top: 70px;
   }
   .description img {
-    max-width: 1189px;
+    max-width: 70em;
+  }
+  .villan1 {
+    position: absolute;
+    width: 15em;
+    top: 300px;
+    right: -140px;
   }
   .descrip {
     display: flex;
@@ -84,14 +102,15 @@ import textgroup from "../assets/txtgroup.png";
     width: 900px;
   }
 
-  .descrip1, .descrip2 {
+  .descrip1,
+  .descrip2 {
     display: flex;
     align-items: center;
     flex-direction: column;
     justify-content: center;
-    
   }
-  .descrip1 ,.descrip2 p{
+  .descrip1,
+  .descrip2 p {
     font-family: "Nunito", sans-serif;
     color: white;
     font-size: 20px;

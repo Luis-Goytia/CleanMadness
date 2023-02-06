@@ -1,23 +1,30 @@
 ---
-import Layout from '../layouts/Layout.astro';
-import Navbar from '../components/Navbar.astro';
-import Game from '../components/Game.astro';
-import InfoGame from '../components/InfoGame.astro'
-import Footer from '../components/Footer.astro';
+import Layout from "../layouts/Layout.astro";
+import Navbar from "../components/Navbar.astro";
+import Game from "../components/Game.astro";
+import InfoGame from "../components/InfoGame.astro";
+import Footer from "../components/Footer.astro";
 ---
 
-<Layout title="Welcome to Astro.">
-	<Navbar/>
-	<Game/>
-	<InfoGame/>
-	<Footer/>
+<Layout title="Clean Madness">
+  <div class="container">
+    <Navbar />
+    <Game />
+    <InfoGame />
+    <Footer />
+  </div>
 </Layout>
 
 <style>
-	body,
-p {
-  margin: 0;
-  padding: 0;
-  border: 0;
-}
+  body,
+  p {
+    margin: 0;
+    padding: 0;
+    border: 0;
+  }
+
+  body {
+    max-width: 100%;
+    max-height: 100%;
+  }
 </style>

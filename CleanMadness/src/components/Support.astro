@@ -1,0 +1,65 @@
+---
+import wkb from '../assets/WKB LOGO.svg'
+import oniria from '../assets/ONIRIA LOGO.svg'
+import edojo from '../assets/Logo EDOJO.svg'
+---
+<div class="support"  id="support">
+    <div class="text">
+        <p>Nos apoyan</p>
+    </div>
+    <div class="line"></div>
+    <div class="logos">
+      <div>
+        <img src={wkb} alt="wkb" class="logo" />
+      </div>
+      <div>
+        <img src={oniria} alt="oniria" class="logo" />
+      </div>
+      <div>
+        <img src={edojo} alt="edojo" class="logo" />
+      </div>
+    </div>
+  </div>
+
+  <style>
+     .support {
+    display: flex;
+    flex-direction: column; 
+    align-items: center;
+    margin-top: 190px;
+  }
+  /* ---------title--------- */
+  .text {
+    position: relative;
+    display: inline-block;
+    text-align: center;
+    height: 20%;
+  }
+
+  .text p {
+    font-family: "Nunito", sans-serif;
+    font-size: 24px;
+    color: white;
+  }
+  .line {
+    position: absolute;
+    width: 89px;
+    height: 0px;
+    border: 2px solid #ffffff;
+    position: relative;
+    display: inline-block;
+    text-align: center;
+    margin-top: -10px;
+  }
+    .logos {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  column-gap: 10rem;
+  margin-top: 100px;
+}
+
+.logo {
+  width: 233px;
+}
+  </style>
