@@ -4,14 +4,17 @@ import Navbar from "../components/Navbar.astro";
 import Game from "../components/Game.astro";
 import InfoGame from "../components/InfoGame.astro";
 import Footer from "../components/Footer.astro";
+import frame2 from "../assets/Frame 2.png";
 ---
 
 <Layout title="Clean Madness">
   <div class="container">
     <Navbar />
-    <Game />
-    <InfoGame />
-    <Footer />
+    <div class="game"><Game /></div>
+    <div class="frame"><img src={frame2} alt="frame2" /></div>
+    <div class="info"><InfoGame /></div>
+    <div class="frame"><img src={frame2} alt="frame2" /></div>
+    <div class="footer"><Footer /></div>
   </div>
 </Layout>
 
@@ -26,6 +29,32 @@ import Footer from "../components/Footer.astro";
   body {
     max-width: 100%;
     max-height: 100%;
-	overflow-x: hidden;
+    overflow-x: hidden;
+  }
+  .container {
+    position: relative;
+  }
+  .game {
+    z-index: 1;
+  }
+  .info {
+    z-index: 2;
+    margin-top: -120px;
+  }
+  .frame {
+    z-index: 4;
+    margin-top: -80px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .frame img {
+    object-fit: contain;
+    max-width: 1906px;
+    height: auto;
+  }
+  .footer {
+    z-index: ;
+    margin-top: -80px;
   }
 </style>
