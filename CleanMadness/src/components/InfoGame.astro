@@ -1,18 +1,37 @@
 ---
+import Why from "./Why.astro";
 ---
-<div class="info">
 
+<div class="info">
+  <div class="why">
+    <Why />
+  </div>
+  <div class="support">
+    
+  </div>
 </div>
 
 <style>
-    .info {
-  background-image: url(../assets/bg2.png);
-  background-size: cover;
-  background-position: center;
-  height: 1650px;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-}
+  .info {
+    background-image: url(../assets/bg2.png);
+    background-size: cover;
+    background-position: center;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(2, 1fr);
+    grid-column-gap: 0px;
+    grid-row-gap: 0px;
+    height: 1450px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+  .why {
+    grid-area: 1 / 1 / 2 / 2;
+    
+  }
+  .support {
+    grid-area: 2 / 1 / 3 / 2;
+  }
 </style>
