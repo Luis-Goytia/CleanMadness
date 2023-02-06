@@ -1,16 +1,22 @@
 ---
 import textgroup from "../assets/txtgroup.png";
+import player from "../assets/SPRITE PLAYER.png"
 import villan1 from "../assets/SPRITE VILLAIN.png";
+import villan2 from "../assets/SPRITE ENEMY 01.png"
+import villan3 from "../assets/SPRITE ENEMY 02.png"
 ---
 
 <div class="why">
   <div class="text">
-    <div><p>El Por que</p></div>
+    <div><p>El Por qué</p></div>
   </div>
   <div class="line"></div>
   <div class="description">
     <img src={textgroup} alt="textgroup" />
+    <img src={player} alt="player" class="player">
+    <img src={villan2} alt="villan2" class="villan2" />
     <img src={villan1} alt="villan1" class="villan1" />
+    <img src={villan3} alt="villan3" class="villan3" />
     <div class="descrip">
       <div class="descrip1">
         <p>
@@ -81,10 +87,20 @@ import villan1 from "../assets/SPRITE VILLAIN.png";
     display: inline-block;
     text-align: center;
     margin-top: 70px;
+   
     
   }
   .description img {
     max-width: 70em;
+  }
+
+  .player{
+    position: absolute;
+    width: 100px;
+    top:-30px;
+    left: 0;
+    max-width: 15em;
+    margin: 0 -40px;
   }
   .villan1 {
     position: absolute;
@@ -92,6 +108,22 @@ import villan1 from "../assets/SPRITE VILLAIN.png";
     top: 300px;
     max-width: 15em;
     margin: 0 -140px;
+  }
+  .villan2{
+    position: absolute;
+    width:100px;
+    top: 380px;
+    max-width: 5em;
+    margin: 0 -200px;
+
+  }
+  .villan3{
+    position: absolute;
+    width:80px;
+    top: 440px;
+    max-width: 5em;
+    margin: 0 -200px;
+
   }
   .descrip {
     display: flex;

@@ -1,16 +1,27 @@
 ---
-import linkedin from '../assets/mdi_linkedin.svg'
-import facebook from '../assets/ic_baseline-facebook.svg'
-import instagram from '../assets/mdi_instagram.svg'
-import web from '../assets/mdi_web.svg'
+import linkedin from "../assets/mdi_linkedin.svg";
+import facebook from "../assets/ic_baseline-facebook.svg";
+import instagram from "../assets/mdi_instagram.svg";
+import web from "../assets/mdi_web.svg";
 ---
 
 <footer>
   <div class="social">
-    <div class="linkedin"><img src={linkedin} alt="linkedin"></div>
-    <div class="facebook"><img src={facebook} alt="facebook"></div>
-    <div class="instagram"><img src={instagram} alt="instagram"></div>
-    <div class="web"><img src={web} alt="web"></div>
+    <div class="linkedin">
+      <a href="https://www.linkedin.com/company/wkbgaming/"
+        ><img src={linkedin} alt="linkedin" /></a>
+    </div>
+    <div class="facebook">
+      <a href="https://www.facebook.com/wkb.agencia"
+        ><img src={facebook} alt="facebook" /></a>
+    </div>
+    <div class="instagram">
+      <a href="https://www.instagram.com/wkbgaming/"
+        ><img src={instagram} alt="instagram" /></a>
+    </div>
+    <div class="web">
+      <a href="https://wkbagencia.com.ar/"><img src={web} alt="web" /></a>
+    </div>
   </div>
   <div class="copyright">
     <h3>©2023 WKB GAMING. Todos los derechos reservados.</h3>
@@ -29,7 +40,7 @@ import web from '../assets/mdi_web.svg'
     place-items: center;
   }
 
-/* --------Social icons-------- */
+  /* --------Social icons-------- */
   .social {
     grid-area: 1 / 1 / 2 / 2;
     display: grid;
@@ -41,8 +52,6 @@ import web from '../assets/mdi_web.svg'
     margin-top: 150px;
     width: 300px;
     place-items: center;
-    
-
   }
 
   .linkedin {
@@ -69,10 +78,9 @@ import web from '../assets/mdi_web.svg'
     display: flex;
     justify-content: center;
   }
-/* --------Copyringht-------- */
+  /* --------Copyringht-------- */
   .copyright {
     grid-area: 2 / 1 / 3 / 2;
-    
   }
   .copyright h3 {
     color: white;
