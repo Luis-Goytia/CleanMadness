@@ -40,9 +40,7 @@ import google from "../assets/google-play-badge.png";
 <style>
   .container {
     display: flex;
-    
     flex-direction: column;
-    
   }
   /* --------------Portada-------------- */
   .game {
@@ -56,30 +54,6 @@ import google from "../assets/google-play-badge.png";
     justify-content: center;
     
   }
-
-  /* .asteroides{
-  position: relative;
-    width: 500px;
-    height: 500px;
-}
-.asteroid {
-  position: absolute;
-  animation: float 5s ease-in-out infinite;
-}
-
-@keyframes float {
-  0% {
-    transform: translate(0, 0);
-  }
-  50% {
-    transform: translate(20px, -20px);
-  }
-  100% {
-    transform: translate(0, 0);
-  }
-}
- */
-
   .portada {
     display: grid;
     grid-template-columns: 1fr;
@@ -127,5 +101,22 @@ import google from "../assets/google-play-badge.png";
   .download img {
     width: 153px;
     margin-top: -230px;
+  }
+
+
+    /* Media query para dispositivos móviles */
+    @media screen and (max-width: 390px) {
+      .game {
+    background-image: url(../assets/BG.jpg);
+    background-size: cover;
+    background-position: center;
+    height: 1080px;
+    width: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    
+  }
   }
 </style>
