@@ -21,7 +21,7 @@ import google from "../assets/google-play-badge.png";
       </div> -->
     <div class="portada">
       <div class="logoColor">
-        <img src={logo} alt="LogoColor" />
+        <img src={logo} alt="LogoColor" class="logoColorpx"/>
       </div>
       <div class="text">
         <p>La importancia de la limpieza del medioambiente</p>
@@ -107,16 +107,37 @@ import google from "../assets/google-play-badge.png";
     /* Media query para dispositivos móviles */
     @media screen and (max-width: 390px) {
       .game {
-    background-image: url(../assets/BG.jpg);
+    background-image: url(../assets/Load Screen.svg);
     background-size: cover;
     background-position: center;
-    height: 1080px;
+    height:800px;
     width: auto;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
     
+  }
+  .portada{
+    margin-top: 480px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+  }
+  .logoColorpx{
+    width: 200px;
+    margin-top: 0px;
+  }
+
+  .text p{
+    font-size: 16px;
+  }
+
+  .download img {
+    width: 153px;
+    margin-top:10px;
   }
   }
 </style>
