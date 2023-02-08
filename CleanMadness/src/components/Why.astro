@@ -1,19 +1,19 @@
 ---
 import textgroup from "../assets/txtgroup.png";
-import player from "../assets/SPRITE PLAYER.png"
+import player from "../assets/SPRITE PLAYER.png";
 import villan1 from "../assets/SPRITE VILLAIN.png";
-import villan2 from "../assets/SPRITE ENEMY 01.png"
-import villan3 from "../assets/SPRITE ENEMY 02.png"
+import villan2 from "../assets/SPRITE ENEMY 01.png";
+import villan3 from "../assets/SPRITE ENEMY 02.png";
 ---
 
 <div class="why">
   <div class="text">
-    <div><p>El Por qué</p></div>
+    <p>El Por qué</p>
   </div>
   <div class="line"></div>
   <div class="description">
-    <img src={textgroup} alt="textgroup" />
-    <img src={player} alt="player" class="player">
+    <img src={textgroup} alt="textgroup" class="textgroup" />
+    <img src={player} alt="player" class="player" />
     <img src={villan2} alt="villan2" class="villan2" />
     <img src={villan1} alt="villan1" class="villan1" />
     <img src={villan3} alt="villan3" class="villan3" />
@@ -86,17 +86,15 @@ import villan3 from "../assets/SPRITE ENEMY 02.png"
     display: inline-block;
     text-align: center;
     margin-top: 70px;
-   
-    
   }
   .description img {
     max-width: 70em;
   }
 
-  .player{
+  .player {
     position: absolute;
     width: 100px;
-    top:-30px;
+    top: -30px;
     left: 0;
     max-width: 15em;
     margin: 0 -40px;
@@ -108,21 +106,19 @@ import villan3 from "../assets/SPRITE ENEMY 02.png"
     max-width: 15em;
     margin: 0 -140px;
   }
-  .villan2{
+  .villan2 {
     position: absolute;
-    width:100px;
+    width: 100px;
     top: 380px;
     max-width: 5em;
     margin: 0 -200px;
-
   }
-  .villan3{
+  .villan3 {
     position: absolute;
-    width:80px;
+    width: 80px;
     top: 440px;
     max-width: 5em;
     margin: 0 -200px;
-
   }
   .descrip {
     display: flex;
@@ -147,5 +143,55 @@ import villan3 from "../assets/SPRITE ENEMY 02.png"
     font-family: "Nunito", sans-serif;
     color: white;
     font-size: 20px;
+  }
+
+  @media only screen and (max-width: 390px) {
+   
+    /* ---------title--------- */
+
+    .text p {
+      font-size: 16px;
+    }
+    .line {
+      width: 50px;
+      margin-top: -12px;
+    }
+    /* ---------description--------- */
+    .description {
+      margin-top: 250px;
+    }
+    .textgroup {
+      display: none;
+    }
+
+    .player {
+      z-index: 1;
+      width: 50px;
+      top: -260px;
+      left: -150px;      
+    }
+    .villan1 {
+      display: none;
+    }
+    .villan2 {
+      width: 80px;
+      top: 190px;
+      left: 325px;
+      z-index: 1;
+    }
+    .villan3 {
+      display: none;
+    }
+    .descrip {
+      width: 350px;
+      background-color: #1c64fc;
+      border: 3px solid #044cdc;
+      border-radius: 0px 37px 0px 40px; 
+    }
+    .descrip1,
+    .descrip2 p {
+      font-size: 14px;
+      padding: 0 20px;
+    }
   }
 </style>

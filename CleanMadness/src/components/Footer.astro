@@ -9,15 +9,18 @@ import web from "../assets/mdi_web.svg";
   <div class="social">
     <div class="linkedin">
       <a href="https://www.linkedin.com/company/wkbgaming/"
-        ><img src={linkedin} alt="linkedin" /></a>
+        ><img src={linkedin} alt="linkedin" /></a
+      >
     </div>
     <div class="facebook">
       <a href="https://www.facebook.com/wkb.agencia"
-        ><img src={facebook} alt="facebook" /></a>
+        ><img src={facebook} alt="facebook" /></a
+      >
     </div>
     <div class="instagram">
       <a href="https://www.instagram.com/wkbgaming/"
-        ><img src={instagram} alt="instagram" /></a>
+        ><img src={instagram} alt="instagram" /></a
+      >
     </div>
     <div class="web">
       <a href="https://wkbagencia.com.ar/"><img src={web} alt="web" /></a>
@@ -87,5 +90,50 @@ import web from "../assets/mdi_web.svg";
     display: flex;
     justify-content: center;
     margin-top: -60px;
+  }
+  @media only screen and (max-width: 390px) {
+    footer {
+      height: 200px;
+    }
+
+    /* --------Social icons-------- */
+    .social {
+      margin-top: 50px;
+      width: 300px;
+    }
+
+    .linkedin {
+      width: 33.33px;
+      grid-area: 1 / 1 / 2 / 2;
+      display: flex;
+      justify-content: center;
+    }
+    .facebook {
+      width: 33.33px;
+      grid-area: 1 / 2 / 2 / 3;
+      display: flex;
+      justify-content: center;
+    }
+    .instagram {
+      width: 33.33px;
+      grid-area: 1 / 3 / 2 / 4;
+      display: flex;
+      justify-content: center;
+    }
+    .web {
+      width: 33.33px;
+      grid-area: 1 / 4 / 2 / 5;
+      display: flex;
+      justify-content: center;
+    }
+    /* --------Copyringht-------- */
+    .copyright {
+      grid-area: 2 / 1 / 3 / 2;
+    }
+    .copyright h3 {
+      font-size: 12px;
+      text-align: center;
+      margin-top: 0px;
+    }
   }
 </style>
