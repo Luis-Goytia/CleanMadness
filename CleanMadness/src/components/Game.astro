@@ -21,7 +21,7 @@ import google from "../assets/google-play-badge.png";
       </div> -->
     <div class="portada">
       <div class="logoColor">
-        <img src={logo} alt="LogoColor" />
+        <img src={logo} alt="LogoColor" class="logoColorpx" />
       </div>
       <div class="text">
         <p>La importancia de la limpieza del medioambiente</p>
@@ -40,9 +40,7 @@ import google from "../assets/google-play-badge.png";
 <style>
   .container {
     display: flex;
-    
     flex-direction: column;
-    
   }
   /* --------------Portada-------------- */
   .game {
@@ -54,32 +52,7 @@ import google from "../assets/google-play-badge.png";
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    
   }
-
-  /* .asteroides{
-  position: relative;
-    width: 500px;
-    height: 500px;
-}
-.asteroid {
-  position: absolute;
-  animation: float 5s ease-in-out infinite;
-}
-
-@keyframes float {
-  0% {
-    transform: translate(0, 0);
-  }
-  50% {
-    transform: translate(20px, -20px);
-  }
-  100% {
-    transform: translate(0, 0);
-  }
-}
- */
-
   .portada {
     display: grid;
     grid-template-columns: 1fr;
@@ -128,4 +101,36 @@ import google from "../assets/google-play-badge.png";
     width: 153px;
     margin-top: -230px;
   }
+
+  /* Media query para dispositivos móviles */
+  @media screen and (max-width: 412px) {
+    .game {
+      background-image: url(../assets/Load Screen.svg);
+      height: 900px;
+      width: auto;
+      display: flex;
+    }
+    .portada {
+      margin-top: 580px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+    }
+    .logoColorpx {
+      width: 200px;
+      margin-top: 0px;
+    }
+
+    .text p {
+      font-size: 16px;
+    }
+
+    .download img {
+      width: 153px;
+      margin-top: 30px;
+    }
+  }
+
+  
 </style>

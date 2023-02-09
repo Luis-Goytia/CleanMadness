@@ -1,5 +1,5 @@
 ---
-import logo from '../assets/LogotipoCOLOR-V2 1.png'
+import logo from "../assets/LogotipoCOLOR-V2 1.png";
 ---
 
 <header>
@@ -18,67 +18,84 @@ import logo from '../assets/LogotipoCOLOR-V2 1.png'
 </header>
 
 <style>
-    header {
-  width: 100vw;
-  position: fixed;
-  z-index: 10;
-  background-color: white;
-  box-shadow: 0px 15px 10px -22px #111;
-}
-/* .navbar {
-  background-color: transparent;
-  border: none;
-  position: fixed;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  width: 70%;
-  margin: auto;
-  padding:  350px;
-  margin-top: 60px;
-}
- */
+  header {
+    position: fixed;
+    z-index: 10;
+  }
 
-.navbar {
-  background-color: transparent;
-  border: none;
-  position: fixed;
-  height: 60px;
-  width: 80%;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  column-gap: 1rem;
-  margin-top: 60px;
-  padding: 0 200px;
-}
+  .navbar {
+    background-color: transparent;
+    border: none;
+    position: fixed;
+    height: 60px;
+    width: 80%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    column-gap: 1rem;
+    margin-top: 60px;
+    padding: 0 200px;
+  }
 
-.logo {
-  margin-left: 15px;
-  width: 136px;
-  height: auto;
-}
+  .logo {
+    width: 136px;
+    height: auto;
+  }
 
-.options {
-  padding: 10px;
-  display: flex;
-}
-.option {
-  margin: 0 15px;
-  border-radius: 20px;
-  box-sizing: border-box;
-  border: 3px solid white;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  width: 145px;
-  height: 42px;
-}
+  .options {
+    display: flex;
+  }
+  .option {
+    margin: 0 15px;
+    border-radius: 20px;
+    box-sizing: border-box;
+    border: 3px solid white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 145px;
+    height: 42px;
+  }
 
-.option a {
-  font-family: "Nunito", sans-serif;
-  font-size: 16px;
-  color: white;
-  text-decoration: none;
-}
+  .option a {
+    font-family: "Nunito", sans-serif;
+    font-size: 16px;
+    color: white;
+    text-decoration: none;
+  }
+
+  @media screen and (max-width: 412px) {
+    .logo {
+      display: none;
+    }
+
+    .navbar {
+      height: auto;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      column-gap: 0.6rem;/* ver */
+      margin-top: 40px;
+      padding: 0 0px;
+    }
+
+    .option {
+      width: 100px;
+      height: 42px;
+      box-shadow: 0px 0px 25px #222;
+      backdrop-filter: blur(10px);
+    }
+
+    .option a {
+      font-family: "Nunito", sans-serif;
+      font-size: 14px;
+      color: white;
+      text-decoration: none;
+    }
+  }
+  @media screen and (max-width: 390px) {
+    .navbar {
+      column-gap: 0rem;
+    }
+  }
 </style>
