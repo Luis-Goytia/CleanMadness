@@ -70,11 +70,11 @@ import logo from "../assets/LogotipoCOLOR-V2 1.png";
     }
 
     .navbar {
-      height: 30px;
+      height: auto;
       display: flex;
       justify-content: space-between;
       align-items: center;
-      column-gap: 0.6rem;
+      column-gap: 0.6rem;/* ver */
       margin-top: 40px;
       padding: 0 0px;
     }
@@ -91,6 +91,11 @@ import logo from "../assets/LogotipoCOLOR-V2 1.png";
       font-size: 14px;
       color: white;
       text-decoration: none;
+    }
+  }
+  @media screen and (max-width: 390px) {
+    .navbar {
+      column-gap: 0rem;
     }
   }
 </style>
