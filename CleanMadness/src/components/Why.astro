@@ -155,7 +155,51 @@ import villan3 from "../assets/SPRITE ENEMY 02.png";
     margin-top:-50px;
   }
   }
+  @media screen and (max-width:  915px) {
+    
+    .line {
+      width: 50px;
+      margin-top: -12px;
+    }
+   
+    .description {
+      margin-top: 240px;
+    }
+    .textgroup {
+      display: none;
+    }
 
+    .player {
+      z-index: 1;
+      width: 50px;
+      top: -240px;
+      left: -350px;      
+    }
+    .villan1 {
+      display: none;
+    }
+    .villan2 {
+      width: 80px;
+      top: 160px;
+      left:530px;
+      z-index: 1;
+    }
+    .villan3 {
+      display: none;
+    }
+    .descrip {
+      width: 750px;
+      background-color: #1c64fc;
+      border: 3px solid #044cdc;
+      border-radius: 0px 37px 0px 40px; 
+    }
+    .descrip1,
+    .descrip2 p {
+      
+      padding: 0 20px;
+    }
+
+}
   @media only screen and (max-width: 412px) {
    
     
@@ -194,6 +238,7 @@ import villan3 from "../assets/SPRITE ENEMY 02.png";
       display: none;
     }
     .descrip {
+      height: 480px;
       width: 350px;
       background-color: #1c64fc;
       border: 3px solid #044cdc;
@@ -206,4 +251,5 @@ import villan3 from "../assets/SPRITE ENEMY 02.png";
     }
   } 
   
+
 </style>
